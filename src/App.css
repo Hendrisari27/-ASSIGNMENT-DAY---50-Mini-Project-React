@@ -1,0 +1,149 @@
+/* ---------- navbar ---------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  flex-wrap: wrap;
+}
+.navbar__brand {
+  font-weight: 700;
+  color: var(--text-h);
+  text-decoration: none;
+}
+.navbar__links {
+  display: flex;
+  gap: 0.25rem;
+  flex: 1;
+}
+.navbar__link {
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+.navbar__link:hover {
+  background: var(--bg-soft);
+  color: var(--text-h);
+}
+.navbar__link.active {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* ---------- dev role switcher (mock branch 02) ---------- */
+.dev-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+}
+.dev-switcher__label {
+  color: var(--text);
+}
+.button--small {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+}
+
+/* ---------- products: filter + card link ---------- */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- dashboard layout ---------- */
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: calc(100svh - 57px);
+}
+.dashboard-sidebar {
+  border-right: 1px solid var(--border);
+  padding: 1.5rem 1rem;
+  background: var(--bg-soft);
+}
+.dashboard-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+.dashboard-main {
+  padding: 1.5rem;
+}
+@media (max-width: 720px) {
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+/* ---------- app shell (branch main placeholder; tetap dipakai bila perlu) ---------- */
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-h);
+}
+.app-placeholder {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 0.4rem;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.app-placeholder h1 {
+  font-size: 1.6rem;
+}
+.app-cmd {
+  text-align: left;
+  margin: 0.5rem 0 0;
+}
+
+/* ---------- login form ---------- */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+.login-form input {
+  font: inherit;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-h);
+}
+.login-form input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
