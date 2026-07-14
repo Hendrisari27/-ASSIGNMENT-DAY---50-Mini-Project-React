@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React Routing — Practice Repo
 
 Repo latihan mentoring **React Routing** (Dibimbing). Sebuah aplikasi **Shop/Admin** yang tumbuh topik demi topik — **satu Git branch per topik**. Kerjakan berurutan dari `01` sampai `05`.
@@ -45,3 +46,7 @@ Setiap branch sudah berisi topik sebelumnya yang **selesai**. Jadi solusi topik 
 
 - Tidak ada backend nyata — semua data ada di `src/api/mockApi.js` (in-memory + delay artifisial agar caching terasa).
 - Semua petunjuk ditulis dalam **Bahasa Indonesia**.
+=======
+# -ASSIGNMENT-DAY---50-Mini-Project-React
+Aplikasi harus memiliki:  Fitur authentication (register &amp; login) Halaman untuk menampilkan daftar user Halaman detail user
+>>>>>>> abcc7d4a55b2f6f70a2077e95a9ecdf726b0667a
